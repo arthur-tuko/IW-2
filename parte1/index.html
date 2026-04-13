@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <main>
+        <div>
+            <ol>
+                <li>
+                    <h1>O que é DOM? (Document Object Model)</h1>
+                    <ul>
+                        <p>O DOM é uma representação estruturada da página web criada pelo navegador assim que ele carrega o HTML. Pense nele como uma "árvore genealógica" (ou árvore de objetos) onde cada tag HTML, texto ou atributo se torna um objeto manipulável pelo JavaScript.</p>
+                        <li>
+                            
+                            <p><h3>Relação com HTML:</h3> O HTML é o arquivo de texto bruto (o rascunho), enquanto o DOM é a "casa construída" na memória. O DOM reflete exatamente o que está na tela. Quando você muda o HTML com JavaScript (usando o DOM), a página web se atualiza instantaneamente sem precisar recarregar.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h1>O que é um Nó (Node)?</h1>
+                    <ul>
+                        <li>
+                            Um nó (node) é a unidade básica da árvore DOM. Tudo em um documento HTML é um nó:
+                            Elementos (Element Node): São as tags HTML, como < div >, < p >, < h1 >.Eles formam a estrutura.
+                        </li>
+
+                        <li>
+                            Texto (Text Node): É o conteúdo de texto real dentro das tags. Ex: O "Olá" em < p >Olá< / p >.
+                        </li>
+                        <li>
+                            Atributos (Attribute Node): São os atributos das tags, como class, id, src, href. Geralmente, eles são considerados propriedades do nó de elemento, não filhos diretos dele.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h1>Métodos para selecionar elementos (DOM Manipulation)</h1>
+                    <ul>
+                        <li>
+                            <p>getElementById('id'): Busca um único elemento específico através do seu atributo id. É o método mais rápido.
+                            <ul>
+                                <li>Exemplo: document.getElementById('cabecalho');</li>
+                            </ul>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>querySelector('seletor'): Busca o primeiro elemento que coincida com um seletor CSS (tag, classe ou id).
+                            <ul>
+                                <li>Exemplo: document.querySelector('.botao-azul'); (seleciona a primeira classe)</li>
+                            </ul>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                            querySelectorAll('seletor'): Busca todos os elementos que coincidem com o seletor CSS e retorna uma lista (NodeList) com eles.
+                            <ul>
+                                <li>Exemplo: document.querySelectorAll('p'); (seleciona todos os parágrafos).</li>
+                            </ul>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h1>Diferença entre innerHTML e innerText</h1>
+                    <ul>
+                        <p>Ambos mudam o conteúdo de um elemento, mas de formas diferentes:</p>
+                        <li><p>innerHTML: Retorna ou altera o conteúdo incluindo as tags HTML. Se você definir el.innerHTML = '<b>oi</b>', o navegador renderizará "oi" em negrito.</p></li>
+                        <li><p>innerText: Retorna ou altera apenas o texto visível para o usuário. Tags HTML incluídas nele serão tratadas como texto puro, não renderizadas.</p></li>
+                        <li><p>Dica: innerText é melhor para performance quando você quer manipular apenas o texto.</p></li>
+                    </ul>
+                </li>
+                <li>
+                    <h1>O que são Eventos?</h1>
+                    <p>Eventos são ações ou ocorrências que acontecem no sistema (navegador) que você está programando, geralmente causadas pelo usuário (clique, rolagem) ou pelo navegador (carregamento completo da página). O JavaScript pode "ouvir" e responder a esses eventos.</p>
+                    <ul>
+                        <li><p>onclick: Dispara quando o usuário clica em um elemento (ex: botão).
+                            <ul><li>Ex: button.onclick = function() { alert('Clicou!'); };</p></li></ul></li>
+                        <li><p>onchange: Dispara quando o valor de um elemento muda (comum em campos de formulário, < select > ou < input > ao perder o foco).
+                            <ul><li>Ex: input.onchange = function() { console.log('Valor mudou'); };</li></ul>
+                        </p></li>
+                        <li><p>onmouseover: Dispara quando o ponteiro do mouse passa por cima de um elemento.
+                            <ul><li>Ex: div.onmouseover = function() { div.style.color = 'red'; };</li></ul></p></li>
+                    </ul>
+
+                </li>
+            </ol>
+           
+        </div>
+    </main>
+</body>
+</html>
