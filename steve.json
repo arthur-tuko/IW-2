@@ -1,0 +1,38 @@
+{
+  "personagem": 
+  {
+    "nome": "Steve",
+    "franquia": "Minecraft",
+    "origem": "abra o jogo, 'Singleplayer' , escolha o nome do seu mundo e o modo de jogo desejado, 'Create New World'",
+    "primeira_aparicao": " Maio - 2009",
+    "perfil_fisico": {
+      "altura": "Aprox. 1.87m",
+      "porte_fisico": "Quadrado/Cubico",
+      "marca_registrada": "Blocos",
+      "item_alternativo": "Ferramentas (machado, picareta, espada, pá e enchada)"
+    }
+    ,
+    "atributos_sobrehumanos": 
+    {
+
+      "força": "infinita (capaz de levar capacidades infinitas se couber no inventario)",
+      "durabilidade": "normal, mas pode reviver",
+      "regeneracao": "semi imortal",
+      "imortalidade": "Ressurreição constante (um respawn e ele volta a vida)"
+    },
+    "combate": {
+      "arma_favorita": "espada e picareta",
+      "estilo": "pode ser construtor,minerador, fazendeiro, agricultor, etc",
+      "fraqueza_notavel": "não existe"
+    },
+    "psicologia": {
+      "motivacao": "vontade de explorar o mundo",
+      "estado_mental": "neutro",
+      "gatilho_sonoro": "uhn"
+    },
+    "variantes": [
+      "alex",
+      "zombie"
+    ]
+  }
+}
